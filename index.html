@@ -220,7 +220,7 @@ align-items: center;
             width: 100%;
             height: auto;
             margin: 0;
-            background-image: url('./resource/closeupcar2.jpg');
+            background-image: url('./temp/closeupcar2.jpg');
             background-color: rgba(0, 0, 0, 0.496);
             background-blend-mode: darken;
             background-size: 100% 100vh;
@@ -297,7 +297,7 @@ align-items: center;
         #centercontent2>.service .ser_img>p{line-height: 1.5;}
         #centercontent2>.service .si1{
             text-align: left;
-            background-image:linear-gradient(to right,rgba(0, 0, 0, 0.841) 30%,rgba(249, 249, 247, 0)), url('./resource/carpolishing.jpg');
+            background-image:linear-gradient(to right,rgba(0, 0, 0, 0.841) 30%,rgba(249, 249, 247, 0)), url('./temp/carpolishing.jpg');
             background-position: center center;
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -329,7 +329,7 @@ align-items: center;
                     }
         #centercontent2>.service .si2{
             text-align: right;
-            background-image:linear-gradient(to left,rgba(0, 0, 0, 0.841) 30%,rgba(249, 249, 247, 0)), url('./resource/carpolishing2.jpg');
+            background-image:linear-gradient(to left,rgba(0, 0, 0, 0.841) 30%,rgba(249, 249, 247, 0)), url('./temp/carpolishing2.jpg');
             background-position: center center;
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -338,7 +338,7 @@ align-items: center;
                     }
          #centercontent2>.service .si3{
             text-align: left;
-            background-image:linear-gradient(to right,rgba(0, 0, 0, 0.841) 30%,rgba(249, 249, 247, 0)), url('./resource/carpolishing.jpg');
+            background-image:linear-gradient(to right,rgba(0, 0, 0, 0.841) 30%,rgba(249, 249, 247, 0)), url('./temp/carpolishing.jpg');
             background-position: center center;
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -364,7 +364,7 @@ color: white;
     flex-direction: row;
     align-items: center;justify-content: space-evenly;
     width: 100%;height: 100vh;
-    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.383) 30%,rgba(249, 249, 247, 0)), url('./resource/metal_img.jpg.jpg');
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.383) 30%,rgba(249, 249, 247, 0)), url('./temp/metal_img.jpg.jpg');
     background-blend-mode:luminosity;
 
 }
@@ -380,13 +380,13 @@ color: white;
     line-height: 1.5;
 }
 .tc2{
-    background-image: url('./resource/car_painter1.jpg');
+    background-image: url('./temp/car_painter1.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .tc3{
-    background-image: url('./resource/paint-spray-master-car-painting-automotive-industry.jpg');
+    background-image: url('./temp/paint-spray-master-car-painting-automotive-industry.jpg');
     background-position: -250px center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -524,16 +524,16 @@ width:100%
 </head>
 
 <body>
-    <div class="content">
+    <div class="content" id="home">
         <nav>
-            <div class="logo">MK</div>
+            <div class="logo" >MK</div>
             <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#" style=" margin: 5;padding: 10px;">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#aboutus" style=" margin: 5;padding: 10px;">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <div class="burger">
            
             </ul>
@@ -546,7 +546,7 @@ width:100%
         </nav>
         <header>
             <video autoplay muted loop id="myVideo" plays-inline>
-                <source src="./resource/profesionalcarpaint.mp4" type="video/mp4">
+                <source src="./temp/profesionalcarpaint.mp4" type="video/mp4">
             </video>
            
             <div class="headcontent">
@@ -585,11 +585,11 @@ width:100%
             </div>
             <div class="image1">
 
-                <img class="img1" src="./resource/carpolishing.jpg" alt="">
+                <img class="img1" src="./temp/carpolishing.jpg" alt="">
 
                 <div class="carosel">
-                    <img class="img2" src="./resource/carpolishing.jpg" alt="">
-                    <img class="img3" src="./resource/carpolishing.jpg" alt="">
+                    <img class="img2" src="./temp/carpolishing.jpg" alt="">
+                    <img class="img3" src="./temp/carpolishing.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -613,7 +613,7 @@ width:100%
                         class="cntspan">Team Experts</span> </div>
             </div>
             <div class="service" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                <div class="ser1">
+                <div class="ser1" id="services">
                 <h2 style="text-decoration: underline;">OUR SERVICES</h2><br>
                 <h1 style="font-size: 35px;line-height:1;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">WE PROVIDE THE BEST SERVICES FOR YOUR VEHICLE</h1><br><br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum amet assumenda autem accusantium iure ducimus nihil quidem voluptatum velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsum magnam ea soluta pariatur et laborum quasi id laudantium inventore repudiandae nobis,
@@ -684,7 +684,7 @@ width:100%
                 </div>
             </div>
         </section>
-        <section class="contact_us">
+        <section class="contact_us" id="contact">
             
                 <video autoplay muted loop id="myVideo1" plays-inline>
                     <source src="/resource/profesionalcarpaint.mp4" type="video/mp4">
@@ -696,7 +696,7 @@ width:100%
             <button type="button" style="color: white;background-color: orangered;padding: 20px;margin: 25px;">CONTACT US</button>
         </div>
         </section>
-        <section class="footer">
+        <section class="footer" id="blog">
             <div class="fd1">
                 <h1 style="font-size: 25px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight:800;text-align: center;">MK</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat debitis suscipit similique nulla inventore. Atque facilis quis nesciunt autem saepe ducimus? Assumenda vero accusamus in!</p>
